@@ -1,3 +1,7 @@
+body {
+  background: #efedef;
+}
+
 section#home {
   padding: 15vh 0;
 
@@ -16,7 +20,7 @@ section#home {
   .button {
     display: inline-block;
     cursor: pointer;
-    background: #fff;
+    background: transparent;
     border-bottom: 2px solid transparent;
     margin: 20px 10px 5px 10px ;
     text-transform: uppercase;
@@ -35,6 +39,7 @@ section#home {
   .movies-container {
     border: 1px solid #ccc;
     padding-bottom: 15px;
+    background: #fff;
   }
 
   // movie row
@@ -47,6 +52,7 @@ section#home {
 
   // movie info
   .movie-info {
+    padding-top: 15px;
     h3, h5 {
       display: inline;
     }
