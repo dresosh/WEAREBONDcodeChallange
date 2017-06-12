@@ -1,5 +1,5 @@
 #This was build with Angular 1.6.4
-#This app was build by Andre Soschinski within a 2 hour timeframe 
+#This app was build by Andre Soschinski within a 2 hour timeframe
 
 ##Run App
 
