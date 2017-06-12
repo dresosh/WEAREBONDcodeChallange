@@ -1,0 +1,65 @@
+section#home {
+  padding: 15vh 0;
+
+  // input field
+  input {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 20px;
+    box-shadow: 0px 1px 3px #d6cfcf;
+  }
+  input:focus {
+    border-color: orange;
+  }
+
+  // filter buttons
+  .button {
+    display: inline-block;
+    cursor: pointer;
+    background: #fff;
+    border-bottom: 2px solid transparent;
+    margin: 20px 10px 5px 10px ;
+    text-transform: uppercase;
+    &:hover {
+      transition: all .7s ease;
+      border-bottom: 2px solid orange;
+    }
+  }
+
+  button:focus {
+    border: none;
+    box-shadow: none;
+  }
+
+  // movie container
+  .movies-container {
+    border: 1px solid #ccc;
+    padding-bottom: 15px;
+  }
+
+  // movie row
+  .movie-row {
+    margin-top: 15px;
+    img {
+      box-shadow: 1px 3px 10px #888;
+    }
+  }
+
+  // movie info
+  .movie-info {
+    h3, h5 {
+      display: inline;
+    }
+
+    h5 {
+      color: #908f8f;
+    }
+  }
+
+  // movie times row
+  .movie-times {
+    margin-top: 10px;
+  }
+}
+
+@import "animate.scss";

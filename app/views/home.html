@@ -1,0 +1,28 @@
+<section id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-offset-3 col-sm-6">
+        <!-- Input field -->
+        <input type="text" name="search" placeholder="Search movies ..." class="form-control" ng-model='input.title'>
+
+        <!-- Filter buttons -->
+        <div class="button" ng-repeat="btn in ctrl.showtimes">{{btn.name}}</div>
+
+        <!-- Movies Container -->
+        <div class="movies-container col-sm-12">
+          <div class="movie-row row scale-fade" ng-repeat="movie in ctrl.movies | filter: input">
+            <div class="col-sm-3">
+              <img ng-src="{{movie.poster}}" alt="{{movie.title}}_image" class="img-responsive">
+            </div>
+            <div class="col-sm-9 movie-info">
+              <h3>{{movie.title}}</h3> <h5>({{movie.rating}})</h5>
+              <div class="row movie-times">
+                <div class="col-sm-4" ng-repeat="time in movie.showtimes">{{time}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
